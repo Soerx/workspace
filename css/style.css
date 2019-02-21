@@ -1,0 +1,62 @@
+@import url("/css/reset.css");
+@font-face {
+  src: url(/fonts/Montserrat-Thin.ttf) format('truetype');
+  font-weight: 100;
+  font-family: 'Monsterrat';
+  font-style: normal;
+}
+@font-face {
+  src: url(/fonts/Montserrat-Light.ttf) format('truetype');
+  font-weight: 300;
+  font-family: 'Monsterrat';
+  font-style: normal;
+}
+@font-face {
+  src: url(/fonts/Montserrat-Bold.ttf) format('truetype');
+  font-weight: 700;
+  font-family: 'Monsterrat';
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+header {
+  background-color: rgba(239, 240, 242, 0.99);
+  max-width: 1440px;
+  height: 806px;
+  margin: 0 auto;
+  position: relative;
+}
+header .headline {
+  position: absolute;
+  display: flex;
+  margin-top: 64px;
+}
+header .headline .logo {
+  margin-left: 150px;
+}
+header .headline .logo a {
+  display: flex;
+  width: 113px;
+  height: 46px;
+  justify-content: center;
+}
+header .headline .logo a > span {
+  padding: 10px 14px 14px 14px;
+  font-family: 'Montserrat';
+  color: #000;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 0px 0px 2px rgba(21, 21, 22, 0.75);
+  border: 5.54px solid #170f1c;
+}
+header .headline .logo a > span > span {
+  font-family: Montserrat;
+  color: #77efe5;
+  font-size: 21px;
+  font-weight: 700;
+}

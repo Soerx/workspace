@@ -1,4 +1,3 @@
-@import url("/css/reset.css");
 @font-face {
   src: url(/fonts/Montserrat-Thin.ttf) format('truetype');
   font-weight: 100;
@@ -16,6 +15,12 @@
   font-weight: 700;
   font-family: 'Monsterrat';
   font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 a {
   text-decoration: none;
@@ -45,7 +50,7 @@ header .headline .logo a {
   justify-content: center;
 }
 header .headline .logo a > span {
-  padding: 10px 14px 14px 14px;
+  padding: 6px 14px 14px 14px;
   font-family: 'Montserrat';
   color: #000;
   font-size: 17px;

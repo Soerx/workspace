@@ -1,19 +1,25 @@
 @font-face {
-  src: url(/fonts/Montserrat-Thin.ttf) format('truetype');
-  font-weight: 100;
-  font-family: 'Monsterrat';
+  font-family: 'montserratbold';
+  src: url('/fonts/montserrat-bold-webfont.woff2') format('woff2'), url('/fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  src: url(/fonts/Montserrat-Light.ttf) format('truetype');
-  font-weight: 300;
-  font-family: 'Monsterrat';
+  font-family: 'montserratlight';
+  src: url('/fonts/montserrat-light-webfont.woff2') format('woff2'), url('/fonts/montserrat-light-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  src: url(/fonts/Montserrat-Bold.ttf) format('truetype');
-  font-weight: 700;
-  font-family: 'Monsterrat';
+  font-family: 'montserratthin';
+  src: url('/fonts/montserrat-thin-webfont.woff2') format('woff2'), url('/fonts/montserrat-thin-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'montserratregular';
+  src: url('/fonts/montserrat-regular-webfont.woff2') format('woff2'), url('/fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
   font-style: normal;
 }
 * {
@@ -41,29 +47,93 @@ header .headline {
   position: absolute;
   display: flex;
   margin-top: 64px;
+  width: 100%;
 }
 header .headline .logo {
   margin-left: 150px;
 }
 header .headline .logo a {
-  display: flex;
+  display: block;
   width: 113px;
   height: 46px;
+  background: url(/img/Logo.png);
+}
+header .headline .logo a:hover {
+  cursor: pointer;
+}
+header .headline .menu-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+header .headline .menu-wrapper .menu {
+  background: url(/img/Menue.png);
+  width: 30px;
+  height: 21px;
+  margin-right: 152px;
+  transition: all .2s;
+}
+header .headline .menu-wrapper .menu:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+header .header-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+header .header-content .header-subtitle {
+  margin-top: 316px;
+  text-transform: uppercase;
+  font-family: 'montserratbold';
+  color: #505050;
+  font-size: 45px;
+  line-height: 28px;
+  text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
+}
+header .header-content .header-subtitle p:first-child {
+  margin-bottom: 25px;
+}
+header .header-content .header-subtitle span {
+  background-color: rgba(118, 244, 234, 0.5);
+  padding: 8px 10px 1px 10px;
+}
+header .contact_wrapper {
+  display: flex;
   justify-content: center;
 }
-header .headline .logo a > span {
-  padding: 6px 14px 14px 14px;
-  font-family: 'Montserrat';
-  color: #000;
-  font-size: 17px;
-  font-weight: 700;
+header .contact_wrapper .contact_us {
+  display: block;
+  font-family: montserratregular;
+  color: #000000;
+  font-size: 18px;
+  line-height: 28px;
   text-transform: uppercase;
-  text-shadow: 0px 0px 2px rgba(21, 21, 22, 0.75);
-  border: 5.54px solid #170f1c;
+  border-radius: 2px;
+  border-width: 2px;
+  border-color: #404040;
+  border-style: solid;
+  padding: 10px 48px;
+  margin-top: 150px;
+  transition: all .2s;
 }
-header .headline .logo a > span > span {
-  font-family: Montserrat;
-  color: #77efe5;
-  font-size: 21px;
-  font-weight: 700;
+header .contact_wrapper .contact_us:hover {
+  opacity: .7;
+  cursor: pointer;
+}
+header .contact_wrapper .contact_us:active {
+  color: #e53935;
+  border-color: #000000;
+  opacity: .7;
+}
+header .header-item {
+  left: 1117px;
+  top: 574px;
+  position: absolute;
+  width: 121px;
+  height: 156px;
+  background: url(/img/Cork_coaster.png);
 }

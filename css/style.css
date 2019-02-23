@@ -37,7 +37,9 @@ ul {
 header {
   background-color: rgba(239, 240, 242, 0.99);
   max-width: 1440px;
-  height: 806px;
+  min-width: 1250px;
+  min-height: 806px;
+  border-spacing: 25px;
   margin: 0 auto;
   position: relative;
 }

@@ -1,27 +1,4 @@
-@font-face {
-  font-family: 'montserratbold';
-  src: url('/fonts/montserrat-bold-webfont.woff2') format('woff2'), url('/fonts/montserrat-bold-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'montserratlight';
-  src: url('/fonts/montserrat-light-webfont.woff2') format('woff2'), url('/fonts/montserrat-light-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'montserratthin';
-  src: url('/fonts/montserrat-thin-webfont.woff2') format('woff2'), url('/fonts/montserrat-thin-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'montserratregular';
-  src: url('/fonts/montserrat-regular-webfont.woff2') format('woff2'), url('/fonts/montserrat-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700|Montserrat:400,700|Raleway:400,500');
 * {
   margin: 0;
   padding: 0;
@@ -34,14 +11,17 @@ a {
 ul {
   list-style: none;
 }
-header {
-  background-color: rgba(239, 240, 242, 0.99);
+body {
+  margin: 0 auto;
   max-width: 1440px;
   min-width: 1250px;
+}
+header {
+  background-color: rgba(239, 240, 242, 0.99);
   min-height: 806px;
   border-spacing: 25px;
-  margin: 0 auto;
   position: relative;
+  width: 100%;
 }
 header .headline {
   position: absolute;
@@ -88,9 +68,10 @@ header .header-content {
 header .header-content .header-subtitle {
   margin-top: 316px;
   text-transform: uppercase;
-  font-family: 'montserratbold';
+  font-family: Montserrat;
   color: #505050;
   font-size: 45px;
+  font-weight: 700;
   line-height: 28px;
   text-shadow: 4px 8px 10px rgba(0, 0, 0, 0.24);
 }
@@ -107,7 +88,8 @@ header .contact_wrapper {
 }
 header .contact_wrapper .contact_us {
   display: block;
-  font-family: montserratregular;
+  font-family: Montserrat;
+  font-weight: 400;
   color: #000000;
   font-size: 18px;
   line-height: 28px;
@@ -136,4 +118,45 @@ header .header-item {
   width: 121px;
   height: 156px;
   background: url(/img/Cork_coaster.png);
+}
+main {
+  position: relative;
+}
+main .about_us {
+  background-color: #f8fafa;
+  position: absolute;
+  min-height: 985px;
+  width: 100%;
+}
+main .about_us h1 {
+  font-family: Montserrat;
+  font-weight: 700;
+  color: #000000;
+  font-size: 38px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 129px;
+  text-align: center;
+}
+main .about_us p {
+  margin-top: 17px;
+  font-family: Merriweather;
+  color: #707070;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+}
+main .about_us .blockwrapper {
+  display: flex;
+}
+main .about_us .blockwrapper .block1 {
+  margin-left: 186px;
+  margin-right: 111px;
+  width: 479px;
+  height: 533px;
+  background: url(/img/Rectangle\ 1.png);
+}
+main .about_us .blockwrapper .block2 {
+  width: 474px;
 }

@@ -36,7 +36,7 @@ header .headline .logo a {
   display: block;
   width: 113px;
   height: 46px;
-  background: url(img/Logo.png);
+  background: url(../img/Logo.png);
 }
 header .headline .logo a:hover {
   cursor: pointer;
@@ -48,7 +48,7 @@ header .headline .menu-wrapper {
   align-items: center;
 }
 header .headline .menu-wrapper .menu {
-  background: url(img/Menue.png);
+  background: url(../img/Menue.png);
   width: 30px;
   height: 21px;
   margin-right: 152px;
@@ -117,7 +117,7 @@ header .header-item {
   position: absolute;
   width: 121px;
   height: 156px;
-  background: url(img/Cork_coaster.png);
+  background: url(../img/Cork_coaster.png);
 }
 main {
   position: relative;
@@ -156,7 +156,7 @@ main .about_us .blockwrapper .block1 {
   margin-right: 111px;
   width: 479px;
   height: 533px;
-  background: url(img/Rectangle.png);
+  background: url(../img/Rectangle.png);
 }
 main .about_us .blockwrapper .block2 {
   width: 474px;

@@ -93,12 +93,13 @@ header .contact_wrapper .contact_us {
   font-family: Montserrat;
   font-weight: 400;
   color: #000000;
+  opacity: .75;
   font-size: 18px;
   line-height: 28px;
   text-transform: uppercase;
   border-radius: 2px;
   border-width: 2px;
-  border-color: #404040;
+  border-color: #303030;
   border-style: solid;
   padding: 10px 48px;
   margin-top: 150px;
@@ -130,20 +131,22 @@ main .about_us {
   min-height: 985px;
   width: 100%;
 }
-main .about_us h1 {
+main .about_us > h1 {
   font-family: Montserrat;
   font-weight: 700;
   color: #000000;
   font-size: 38px;
+  opacity: .9;
   line-height: 28px;
   text-transform: uppercase;
   margin-top: 129px;
   text-align: center;
 }
-main .about_us p {
+main .about_us > p {
   margin-top: 17px;
   font-family: Merriweather;
-  color: #707070;
+  color: #000000;
+  opacity: .62;
   font-weight: 400;
   line-height: 28px;
   text-align: center;
@@ -165,7 +168,8 @@ main .about_us .blockwrapper .block2 {
 }
 main .about_us .blockwrapper .block2 h3 {
   font-family: Merriweather;
-  color: #444444;
+  color: #000000;
+  opacity: .75;
   font-size: 20px;
   font-weight: 700;
   line-height: 28px;
@@ -176,8 +180,13 @@ main .about_us .blockwrapper .block2 p {
   font-family: Raleway;
   color: #000000;
   font-size: 16px;
+  opacity: .74;
   font-weight: 400;
   line-height: 28px;
   text-align: left;
   text-transform: none;
+  margin-bottom: 44px;
+}
+main .about_us .blockwrapper .block2 p:nth-child(2) {
+  margin-top: 25px;
 }

@@ -48,11 +48,13 @@ header .headline .menu-wrapper {
   align-items: center;
 }
 header .headline .menu-wrapper .menu {
-  background: url(../img/Menue.png);
   width: 30px;
   height: 21px;
   margin-right: 152px;
-  transition: all .2s;
+  border-bottom: 12px double #888;
+  border-top: 4px solid #888;
+  cursor: pointer;
+  transition: all 0.2s ease 0s;
 }
 header .headline .menu-wrapper .menu:hover {
   opacity: .7;
@@ -117,7 +119,7 @@ header .header-item {
   position: absolute;
   width: 121px;
   height: 156px;
-  background: url(../img/Cork_coaster.png);
+  background: url(../img/juice_item.png);
 }
 main {
   position: relative;

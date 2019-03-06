@@ -185,8 +185,11 @@ main .about_us .blockwrapper .block2 p {
   line-height: 28px;
   text-align: left;
   text-transform: none;
-  margin-bottom: 44px;
+  margin-bottom: 30px;
 }
 main .about_us .blockwrapper .block2 p:nth-child(2) {
+  margin-top: 25px;
+}
+main .about_us .blockwrapper .block2 p:nth-child(5) {
   margin-top: 25px;
 }
